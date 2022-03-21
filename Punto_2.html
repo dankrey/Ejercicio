@@ -6,26 +6,24 @@
     <link rel="stylesheet" href="CSS/style.css">
   </head>
   <body>
-    <h1 class="titulo">Punto 1-Contador de Caracteres</h1>
+    <h1 class="titulo">Punto 5-Número Par o Impar</h1>
     
     <br>
     <br>
     <br>
     
-    <form>
-      
-      <div class="NoVacio">
-        <input type="text" id="caracter" onKeyDown="ContarCaracter()" onKeyUp="ContarCaracter()" required>
-         <!--Agregamos los onKeyDown y onKeyUp para activar la Funcion cada vez que se escriba en el input-->
-        <label>Contador</label>
-      </div>
-     
-        
-      
+    
 
-        <h3>Resultado del Contador de Caracteres</h3>
-        <label  class="NoVacio ResultadoText">Resultado</label> <input type="text" id="result" class="ResultadoResult" readonly></div>
-      
+    <form id="formEjemplo2" name="form2">
+      <label>Número:</label>
+      <input name="numero" type="number" id="num"></input>
+      <button type="submit">Calcular</button>
+      <br>
+      <br>
+      <br>
+      <label>Resultado:</label>
+     <input type="text" id="captura" class="ResultadoResult" >
+      <button type="submit">Calcular</button>
     </form>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
