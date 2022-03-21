@@ -12,16 +12,21 @@
     <br>
     <br>
     
-    <form id="formEjemplo_1" name="form">
-        <label class="text_1">Escribe una palabra:</label>
-        <input name="nombre" type="text" id="nombreInput">
-        <button id="Btn1" class="button3d" type="submit">CONTAR</button>
-        <br>
-        <br>
-        <label class="ResultText">Resultado</label>
-        <input name="Resultado" type="text" id="nombreResult">
-    </form
+    <form>
+      
+      <div class="NoVacio">
+        <input type="text" id="caracter" onKeyDown="ContarCaracter()" onKeyUp="ContarCaracter()" required>
+         <!--Agregamos los onKeyDown y onKeyUp para activar la Funcion cada vez que se escriba en el input-->
+        <label>Contador</label>
+      </div>
+     
+        
+      
 
+        <h3>Resultado del Contador de Caracteres</h3>
+        <label  class="NoVacio ResultadoText">Resultado</label> <input type="text" id="result" class="ResultadoResult" readonly></div>
+      
+    </form>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="JQUERY/jquery.js"></script>

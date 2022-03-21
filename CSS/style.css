@@ -6,27 +6,33 @@
     
 }
 
-.button3d {
-    min-width: 130px;
-    height: 40px;
-    color: #fff;
-    padding: 5px 10px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    display: inline-block;
-    outline: none;
-    border-radius: 5px;
+html {
+    font-family: 'Lato';
+    text-align: justify;
+    font-size: 1.25em;
+    margin: 20px;
+    margin-top: 50px;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+  
+  h3 {
+    margin-top: 50px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+  }
+  
+  .ResultadoResult{
     border: none;
-    background: #3a86ff;
-    box-shadow: 0 5px #4433ff;
+    border-bottom: 2px solid rgb(255, 72, 0); 
+    margin-left: 15px;
+    outline: none;
+    color: rgb(235, 6, 44);
   }
-  .button3d:hover {
-    box-shadow: 0 3px #4433ff;
-    top: 1px;
-  }
-  .button3d:active {
-    box-shadow: 0 0 #4433ff;
-    top: 5px;
+  .ResultadoText{
+      color: blue;
   }
