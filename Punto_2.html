@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Taller 1 Multimedia</title>
+    <link rel="stylesheet" href="CSS/style.css">
+  </head>
+  <body>
+    <h1 class="titulo">Punto 1-Contador de Caracteres</h1>
+    
+    <br>
+    <br>
+    <br>
+    
+    <form>
+      
+      <div class="NoVacio">
+        <input type="text" id="caracter" onKeyDown="ContarCaracter()" onKeyUp="ContarCaracter()" required>
+         <!--Agregamos los onKeyDown y onKeyUp para activar la Funcion cada vez que se escriba en el input-->
+        <label>Contador</label>
+      </div>
+     
+        
+      
+
+        <h3>Resultado del Contador de Caracteres</h3>
+        <label  class="NoVacio ResultadoText">Resultado</label> <input type="text" id="result" class="ResultadoResult" readonly></div>
+      
+    </form>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="JQUERY/jquery.js"></script>
+  </body>
+</html>
