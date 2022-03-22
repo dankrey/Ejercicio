@@ -21,7 +21,9 @@ function ParImpar(num) {
 
   }
 }
-  
+
+
+ //Funcion para definir si es par o impar 
 
 $("#formEjemplo2").submit((ev) => {
   ev.preventDefault();
@@ -37,7 +39,7 @@ $("#formEjemplo2").submit((ev) => {
 });
 
 
-
+//FUNCION DEL BUSCADOR
 $(document).ready(function(){
 
   $('#buscador').keyup(function(){
@@ -53,7 +55,7 @@ $(document).ready(function(){
 
 
 
-
+//FUNCION DEL TEX AREA
 var textarea = document.querySelector('textarea');
 
 textarea.addEventListener('keydown', TexArea);
@@ -66,10 +68,6 @@ function  TexArea(){
   },0);
 }
 
-
-
-
-  
 $("#formEjemplo2").submit((ev) => {
   ev.preventDefault();
 
