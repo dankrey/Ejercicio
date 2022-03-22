@@ -5,13 +5,6 @@ function ContarCaracter() {
     $("#result").addClass('NoVacio'); //Agregamos la Clase de NoVacio para decir que el input no esta vacio y que suba el Texto del Label(Como cuando haces Focus)
   } //Aqui termina la Funcion
 
-
- 
-  
-  
-  
-
-
 function ParImpar(num) {
   // caso base
   if ( num==0 ){
@@ -30,10 +23,6 @@ function ParImpar(num) {
 }
   
 
-
-
-
-
 $("#formEjemplo2").submit((ev) => {
   ev.preventDefault();
   let num = $("#num").val();
@@ -46,6 +35,48 @@ $("#formEjemplo2").submit((ev) => {
 
 
 });
+
+
+
+$(document).ready(function(){
+
+  $('#buscador').keyup(function(){
+       var area = $('#texto');
+       var areatxt = area.text().replace("<span>","").replace("</span>");
+       var txtbuscado = $('#buscador').val();
+       var txtRegEx = new RegExp("("+txtbuscado+")", "igm");    
+       var outputtxt = areatxt.replace(txtRegEx ,"<span>$1</span>");
+       area.html(outputtxt);
+  });
+  
+});
+
+
+
+
+var textarea = document.querySelector('textarea');
+
+textarea.addEventListener('keydown', TexArea);
+             
+function  TexArea(){
+  var el = this;
+  setTimeout(function(){
+    el.style.cssText = 'height:auto; padding:0';
+    el.style.cssText = 'height:' + el.scrollHeight + 'px';
+  },0);
+}
+
+
+
+
+  
+$("#formEjemplo2").submit((ev) => {
+  ev.preventDefault();
+
+ var texto =  $('#Texto_Agregar').val();
+ $(".Texto_Metido").text(texto);
+});
+
 
 
 

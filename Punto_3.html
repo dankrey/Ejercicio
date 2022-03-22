@@ -1,32 +1,51 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>Taller 1 Multimedia</title>
-    <link rel="stylesheet" href="CSS/style.css">
-  </head>
-  <body>
-    <h1 class="titulo">Punto 5-Número Par o Impar</h1>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Taller 1 Multimedia</title>
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+  <h1 class="titulo">Punto 5-Número Par o Impar</h1>
+
+  <br>
+  <br>
+  <br>
+
+
+
+  <form id="formEjemplo2" name="form2">
     
+    <label for="buscador">Buscador:</></label>
+    <input type="text" id="buscador"  placeholder="Buscador de contenido" />
     <br>
     <br>
-    <br>
-    
+    <label for="buscador">Ingresar Texto:</></label>
+    <textarea  placeholder='Escribe un texto' id="Texto_Agregar" class=""></textarea>
+    <button type="submit" id="AgregarTexto"  >Insertar Texto</button>
+
+  </form>
+
+     
+   
+    <p id="texto" class="Texto_Metido" >El BASIC es un lenguaje de programación que se creo con fines pedagógicos, era el lenguaje que
+      utilizan las microcomputadoras de los años 80. Actualmente sigue siendo muy conocido y tienen muchísimos dialectos
+      muy diferentes al original. Veamos algo de historia del Basic. En los años 1960, las computadoras tenían un valor
+      elevado y se usaban para tareas específicas, eran mono tarea. Pero luego, permitiendo que algunas empresas
+      pequeñas pudieran permitirse adquirirlas. Las computadoras mejoraron mucho en velocidad, capacidad de
+      procesamiento de datos y también lo hicieron los lenguajes. Aparecieron lenguajes como el FORTRAN, el COBOL y el
+      Basic.
+    </p>
+
     
 
-    <form id="formEjemplo2" name="form2">
-      <label>Número:</label>
-      <input name="numero" type="number" id="num"></input>
-      <button type="submit">Calcular</button>
-      <br>
-      <br>
-      <br>
-      <label>Resultado:</label>
-     <input type="text" id="captura" class="ResultadoResult" >
-      <button type="submit">Calcular</button>
-    </form>
+  
+  
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="JQUERY/jquery.js"></script>
-  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="JQUERY/jquery.js"></script>
+</body>
+
 </html>
